@@ -5,6 +5,9 @@ provider "google" {
 module "deploy" {
   source = "../../modules/deploy"
 
+environment = "development"
+naming_suffix = "dev"
+naming_project = "marcusmonteirodesouza"
   network = "mms-shrvpchost-d-vpc-glbl-shared-dev"
   regional_config = {
     "northamerica-northeast1" = {

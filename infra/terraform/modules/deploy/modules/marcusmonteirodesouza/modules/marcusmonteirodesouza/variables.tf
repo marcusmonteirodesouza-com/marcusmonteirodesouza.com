@@ -1,6 +1,21 @@
+variable "environment" {
+  type        = string
+  description = "Environment name (alpha, beta, production)."
+}
+
 variable "image" {
   type        = string
   description = "URL of the Container image in Google Artifact Registry."
+}
+
+variable "naming_project" {
+  type        = string
+  description = "Project short description without spaces. "
+}
+
+variable "naming_suffix" {
+  type        = string
+  description = "Suffix to add to resource names."
 }
 
 variable "network" {
