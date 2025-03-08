@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    ports:
+      - "${PORT}:${PORT}"
+    environment:
+      - HOSTNAME=${HOSTNAME}
+      - NODE_ENV=${NODE_ENV}
+      - PORT=${PORT}
