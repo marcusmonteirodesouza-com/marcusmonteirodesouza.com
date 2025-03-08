@@ -4,6 +4,17 @@ provider "google" {
   user_project_override = true
 }
 
+provider "docker" {
+  registry_auth {
+    address  = "northamerica-northeast1-docker.pkg.dev"
+    username = "oauth2accesstoken"
+    password = data.google_client_config.default.access_token
+  }
+}
+
+data "google_client_config" "default" {
+}
+
 module "deploy" {
   source = "../../modules/deploy"
 
