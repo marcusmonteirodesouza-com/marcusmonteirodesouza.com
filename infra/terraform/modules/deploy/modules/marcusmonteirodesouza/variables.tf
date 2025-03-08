@@ -1,5 +1,5 @@
 variable "network" {
-  type = string
+  type        = string
   description = "The VPC network."
 }
 

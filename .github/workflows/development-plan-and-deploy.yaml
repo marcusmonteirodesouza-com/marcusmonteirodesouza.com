@@ -1,4 +1,4 @@
-name: "Plan and Deploy"
+name: "Development - Plan and Deploy"
 
 on:
   pull_request:
