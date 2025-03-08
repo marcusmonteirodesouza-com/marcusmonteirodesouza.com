@@ -8,6 +8,7 @@ locals {
 
   location_map = {
     "northamerica-northeast1" = "na-ne1"
+    "us-central1"             = "us-ctl1"
   }
 
   location_abbreviation = lookup(local.location_map, var.location, null)

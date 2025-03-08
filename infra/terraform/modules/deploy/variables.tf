@@ -4,7 +4,7 @@ variable "environment" {
 }
 
 variable "naming_project" {
-  type = string
+  type        = string
   description = "Project short description without spaces. "
 }
 
@@ -14,7 +14,7 @@ variable "naming_suffix" {
 }
 
 variable "network" {
-  type = string
+  type        = string
   description = "The VPC network."
 }
 
