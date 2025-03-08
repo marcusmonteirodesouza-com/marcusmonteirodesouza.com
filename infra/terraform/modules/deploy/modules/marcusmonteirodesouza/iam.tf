@@ -5,6 +5,7 @@ locals {
 }
 
 resource "google_service_account" "marcusmonteirodesouza" {
+  project      = data.google_project.project.project_id
   account_id   = "marcusmonteirodesouza-sa"
   display_name = "marcusmonteirodesouza Service Account"
 }
