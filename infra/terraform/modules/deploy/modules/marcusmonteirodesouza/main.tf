@@ -1,3 +1,6 @@
+data "google_project" "project" {
+}
+
 module "marcusmonteirodesouza" {
   source = "./modules/marcusmonteirodesouza"
 
